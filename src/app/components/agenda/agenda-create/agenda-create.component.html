@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title> Nova Agenda</mat-card-title>
+    <form>
+        
+        <mat-form-field>
+            <input matInput placeholder="Tarefa" 
+            [(ngModel)]="agenda.tarefa" name="tarefa"> 
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" 
+            [(ngModel)]="agenda.data" name="data"> 
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hora" 
+            [(ngModel)]="agenda.hora" name="hora"> 
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)= "createAgenda()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)= "cancel()" > 
+        Cancelar
+    </button>
+</mat-card>
+
+
+

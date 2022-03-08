@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-title> Excluir Agenda</mat-card-title>
+    <form>
+        
+        <mat-form-field>
+            <input matInput placeholder="Tarefa" 
+            [(ngModel)]="agenda.tarefa" name="tarefa" disabled> 
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" 
+            [(ngModel)]="agenda.data" name="data" disabled> 
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hora" 
+            [(ngModel)]="agenda.hora" name="hora" disabled> 
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button (click)= "deleteAgenda()" color="primary">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)= "cancel()" > 
+        Cancelar
+    </button>
+</mat-card>
